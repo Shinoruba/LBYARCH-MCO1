@@ -8,7 +8,7 @@ if %errorlevel% neq 0 (
 
 gcc -std=c99 -o c_rgb c_rgb.c asm_rgb.o
 if %errorlevel% neq 0 (
-    echo GCC compilxation failed
+    echo GCC compilation failed
     pause
     exit /b %errorlevel%
 )
