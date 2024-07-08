@@ -8,7 +8,7 @@ The project aims to convert an RGB (Red, Green, Blue) image to a grayscale image
 - The project is for a Windows environment using x64 NASM assembly and C99
 
 ## Purpose of Assembly Code:
-The assembly code (cvtRGBToGray.asm) is responsible for the core image conversion algorithm. Its purpose is to:
+The assembly code (asm_rgb.asm) is responsible for the core image conversion algorithm. Its purpose is to:
 
 Efficiently process each pixel of the input RGB image
 Calculate the grayscale value for each pixel by averaging its R, G, and B values
