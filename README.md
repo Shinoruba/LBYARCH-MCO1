@@ -1,6 +1,6 @@
 # RGB to Grayscale Image Conversion
 
-The project aims to convert an RGB (Red, Green, Blue) image to a grayscale image. This is a common image processing task. The specifications include:
+The project aims to convert an RGB (Red, Green, Blue) image to a grayscale image. The specifications include:
 
 - Input: A 3D array representing an RGB image (width x height x 3 color channels)
 - Output: A 2D array representing a grayscale image (width x height)
@@ -8,23 +8,20 @@ The project aims to convert an RGB (Red, Green, Blue) image to a grayscale image
 - The project is for a Windows environment using x64 NASM assembly and C99
 
 ## Purpose of Assembly Code:
-The assembly code (asm_rgb.asm) is responsible for the core image conversion algorithm. Its purpose is to:
-
-Efficiently process each pixel of the input RGB image
-Calculate the grayscale value for each pixel by averaging its R, G, and B values
-Store the resulting grayscale values in the output array
-Handle the low-level memory access and arithmetic operations for performance
+The assembly code (asm_rgb.asm) is responsible for the core image conversion algorithm.
+- Efficiently process each pixel of the input RGB image
+- Calculate the grayscale value for each pixel by averaging its R, G, and B values
+- Store the resulting grayscale values in the output array
+- Handle the low-level memory access and arithmetic operations for performance
 
 The assembly code is designed to be called from C, taking parameters for the input and output image pointers, as well as the image dimensions.
 ## Purpose of C Code:
-The C code (c_rgb.c) serves several purposes:
-
-Set up the test data: It defines a sample 3x3 RGB image as input
-Provide the main program structure and flow control
-Handle input/output operations (printing the original and converted images)
-Interface with the assembly code by declaring the external function and calling it
-Allocate memory for the input and output images
-Demonstrate how to use the assembly function in a C program
+- Set up the test data: It defines a sample 3x3 RGB image as input
+- Provide the main program structure and flow control
+- Handle input/output operations (printing the original and converted images)
+- Interface with the assembly code by declaring the external function and calling it
+- Allocate memory for the input and output images
+- Demonstrate how to use the assembly function in a C program
 
 
 It continues this process for all pixels in the image.
